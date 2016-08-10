@@ -1,1 +1,1 @@
-var mein = new Main();
+var main = new Main();
