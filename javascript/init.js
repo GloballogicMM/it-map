@@ -1,0 +1,1 @@
+var mein = new Main();
