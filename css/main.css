@@ -10,3 +10,7 @@
 .text-white {
     color: aliceblue;
 }
+
+#map {
+    height: 400px;
+}

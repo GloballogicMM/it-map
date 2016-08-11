@@ -2,4 +2,5 @@
 var main = new Main();
 
 //init foundation
-$(document).foundation()
+$(document).foundation();
+
