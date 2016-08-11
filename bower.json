@@ -1,0 +1,20 @@
+{
+  "name": "it-map",
+  "homepage": "https://github.com/GloballogicMM/it-map",
+  "authors": [
+    "maksr51314 <maksr51314@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "classnames": "^2.2.5"
+  }
+}
