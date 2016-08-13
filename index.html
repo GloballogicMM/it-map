@@ -7,40 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script>
-        // When you add a marker using a Place instead of a location, the Maps
-        // API will automatically add a 'Save to Google Maps' link to any info
-        // window associated with that marker.
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 17,
-                center: {lat: 50.466076, lng: 30.513049}
-            });
 
-            var marker = new google.maps.Marker({
-                map: map,
-                // Define the place with a location, and a query string.
-                place: {
-                    location: {lat: 50.466076, lng: 30.513049},
-                    query: 'Google, Sydney, Australia'
-
-                },
-                // Attributions help users find your site again.
-                attribution: {
-                    source: 'Google Maps JavaScript API',
-                    webUrl: 'https://developers.google.com/maps/'
-                }
-            });
-
-            // Construct a new InfoWindow.
-            var infoWindow = new google.maps.InfoWindow({
-                content: 'Google Sydney'
-            });
-
-            // Opens the InfoWindow when marker is clicked.
-            marker.addListener('click', function () {
-                infoWindow.open(map, marker);
-            });
-        }
     </script>
 
 </head>
@@ -121,6 +88,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/2.1.1/what-input.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
 
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEZBo3lOJaG_7Va6M2CiQGDSCCngs4YBk"
+        type="text/javascript"></script>
+
 <script src="https://npmcdn.com/react@15.3.0/dist/react-with-addons.js"></script>
 <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
 <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
@@ -131,8 +102,6 @@
 <script src="javascript/Main.js"></script>
 
 <script src="javascript/init.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEZBo3lOJaG_7Va6M2CiQGDSCCngs4YBk&callback=initMap"
-        type="text/javascript"></script>
+
 </body>
 </html>
